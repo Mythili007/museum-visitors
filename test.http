@@ -1,0 +1,20 @@
+
+
+GET http://localhost:5002/api/visitors?date=
+
+###
+
+GET http://localhost:5002/api/visitors?date=1404198000000
+
+###
+# Ignored museum is the highest one
+GET http://localhost:5002/api/visitors?date=1404198000000&ignored=avila_adobe
+
+###
+# Ignored museum is the lowest one
+GET http://localhost:5002/api/visitors?date=1404198000000&ignored=hellman_quon
+
+###
+
+# Ignored museum is neither the lowest nor the highest
+GET http://localhost:5002/api/visitors?date=1404198000000&ignored=visitor_center_avila_adobe
